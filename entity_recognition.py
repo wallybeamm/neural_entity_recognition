@@ -141,6 +141,13 @@ def save_model(model, output_dir):
       print("Saved model to", output_dir)
 
 
+json_path = '/content/train.jsonl'
+model_name = 'en_core_web_trf'
+
+output_dir = "/content/Model"
+n_iter = 100
+learn_rate=2e-5
+
 # Main
 from thinc.api import set_gpu_allocator, require_gpu
 
